@@ -11,45 +11,6 @@
 
 ActiveRecord::Schema.define(:version => 20090522053640) do
 
-  create_table "casserver_lt", :force => true do |t|
-    t.string   "ticket",          :null => false
-    t.datetime "created_on",      :null => false
-    t.datetime "consumed"
-    t.string   "client_hostname", :null => false
-  end
-
-  create_table "casserver_pgt", :force => true do |t|
-    t.string   "ticket",            :null => false
-    t.datetime "created_on",        :null => false
-    t.string   "client_hostname",   :null => false
-    t.string   "iou",               :null => false
-    t.integer  "service_ticket_id", :null => false
-  end
-
-  create_table "casserver_schema_infos", :force => true do |t|
-    t.float "version"
-  end
-
-  create_table "casserver_st", :force => true do |t|
-    t.string   "ticket",                   :null => false
-    t.datetime "created_on",               :null => false
-    t.datetime "consumed"
-    t.string   "client_hostname",          :null => false
-    t.string   "username",                 :null => false
-    t.string   "type",                     :null => false
-    t.integer  "proxy_granting_ticket_id"
-    t.integer  "tgt_id"
-    t.text     "service"
-  end
-
-  create_table "casserver_tgt", :force => true do |t|
-    t.string   "ticket",           :null => false
-    t.datetime "created_on",       :null => false
-    t.string   "client_hostname",  :null => false
-    t.string   "username",         :null => false
-    t.text     "extra_attributes"
-  end
-
   create_table "levels", :force => true do |t|
     t.string "name"
   end

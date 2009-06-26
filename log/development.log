@@ -8152,3 +8152,579 @@ ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (9.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (119.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (106.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090515103555)
+  [4;35;1mSQL (90.7ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) NOT NULL, `crypted_password` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `persistence_token` varchar(255) NOT NULL, `login_count` int(11) DEFAULT 0 NOT NULL, `last_request_at` datetime, `current_login_at` datetime, `last_login_at` datetime, `current_login_ip` varchar(255), `last_login_ip` varchar(255), `active` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090515103555')[0m
+Migrating to AddLevelToUsers (20090520084951)
+  [4;35;1mSQL (123.6ms)[0m   [0mALTER TABLE `users` ADD `level` int(11)[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090520084951')[0m
+Migrating to AddFirstNameLastNameEmailToUsers (20090521101226)
+  [4;35;1mSQL (93.0ms)[0m   [0mALTER TABLE `users` ADD `first_name` varchar(255)[0m
+  [4;36;1mSQL (106.6ms)[0m   [0;1mALTER TABLE `users` ADD `last_name` varchar(255)[0m
+  [4;35;1mSQL (81.5ms)[0m   [0mALTER TABLE `users` ADD `email` varchar(255)[0m
+  [4;36;1mSQL (91.9ms)[0m   [0;1mALTER TABLE `users` ADD `perishable_token` varchar(255) DEFAULT '' NOT NULL[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090521101226')[0m
+Migrating to ChangeActiveDefaultToUsers (20090522045349)
+  [4;36;1mSQL (4.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (4.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (90.7ms)[0m   [0;1mALTER TABLE `users` CHANGE `active` `active` tinyint(1) DEFAULT 0 NOT NULL[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090522045349')[0m
+Migrating to RenameLevelToUsers (20090522052904)
+  [4;36;1mSQL (7.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mSHOW COLUMNS FROM `users` LIKE 'level'[0m
+  [4;36;1mSQL (112.8ms)[0m   [0;1mALTER TABLE `users` CHANGE `level` `level_id` int(11) DEFAULT NULL[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090522052904')[0m
+Migrating to CreateLevels (20090522053640)
+  [4;36;1mSQL (104.6ms)[0m   [0;1mCREATE TABLE `levels` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090522053640')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW FIELDS FROM `levels`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mdescribe `levels`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW KEYS FROM `levels`[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mDROP DATABASE IF EXISTS `company_test`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE DATABASE `company_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.5ms)[0m   [0mCREATE TABLE `levels` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (114.6ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) NOT NULL, `crypted_password` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `persistence_token` varchar(255) NOT NULL, `login_count` int(11) DEFAULT 0 NOT NULL, `last_request_at` datetime, `current_login_at` datetime, `last_login_at` datetime, `current_login_ip` varchar(255), `last_login_ip` varchar(255), `active` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime, `level_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `email` varchar(255), `perishable_token` varchar(255) DEFAULT '' NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (83.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (131.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522053640')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090515103555')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090520084951')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521101226')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522045349')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090522052904')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (7.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `company_test`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE DATABASE `company_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (81.6ms)[0m   [0mCREATE TABLE `levels` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (120.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) NOT NULL, `crypted_password` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `persistence_token` varchar(255) NOT NULL, `login_count` int(11) DEFAULT 0 NOT NULL, `last_request_at` datetime, `current_login_at` datetime, `last_login_at` datetime, `current_login_ip` varchar(255), `last_login_ip` varchar(255), `active` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime, `level_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `email` varchar(255), `perishable_token` varchar(255) DEFAULT '' NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (85.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (114.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522053640')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090515103555')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090520084951')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521101226')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522045349')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090522052904')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mDROP DATABASE IF EXISTS `company_test`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE DATABASE `company_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (67.0ms)[0m   [0mCREATE TABLE `levels` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (121.5ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) NOT NULL, `crypted_password` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `persistence_token` varchar(255) NOT NULL, `login_count` int(11) DEFAULT 0 NOT NULL, `last_request_at` datetime, `current_login_at` datetime, `last_login_at` datetime, `current_login_ip` varchar(255), `last_login_ip` varchar(255), `active` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime, `level_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `email` varchar(255), `perishable_token` varchar(255) DEFAULT '' NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (122.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (108.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (10.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522053640')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090515103555')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090520084951')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521101226')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522045349')[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090522052904')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (8.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `company_test`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE DATABASE `company_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (43.4ms)[0m   [0mCREATE TABLE `levels` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (110.7ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) NOT NULL, `crypted_password` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `persistence_token` varchar(255) NOT NULL, `login_count` int(11) DEFAULT 0 NOT NULL, `last_request_at` datetime, `current_login_at` datetime, `last_login_at` datetime, `current_login_ip` varchar(255), `last_login_ip` varchar(255), `active` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime, `level_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `email` varchar(255), `perishable_token` varchar(255) DEFAULT '' NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (76.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (95.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522053640')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090515103555')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090520084951')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521101226')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522045349')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090522052904')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mDROP DATABASE IF EXISTS `company_test`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCREATE DATABASE `company_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (59.3ms)[0m   [0mCREATE TABLE `levels` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (112.5ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) NOT NULL, `crypted_password` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `persistence_token` varchar(255) NOT NULL, `login_count` int(11) DEFAULT 0 NOT NULL, `last_request_at` datetime, `current_login_at` datetime, `last_login_at` datetime, `current_login_ip` varchar(255), `last_login_ip` varchar(255), `active` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime, `level_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `email` varchar(255), `perishable_token` varchar(255) DEFAULT '' NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (99.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (81.7ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522053640')[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090515103555')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090520084951')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521101226')[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522045349')[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090522052904')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (6.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `company_test`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE DATABASE `company_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (67.1ms)[0m   [0mCREATE TABLE `levels` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (103.1ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) NOT NULL, `crypted_password` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `persistence_token` varchar(255) NOT NULL, `login_count` int(11) DEFAULT 0 NOT NULL, `last_request_at` datetime, `current_login_at` datetime, `last_login_at` datetime, `current_login_ip` varchar(255), `last_login_ip` varchar(255), `active` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime, `level_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `email` varchar(255), `perishable_token` varchar(255) DEFAULT '' NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (77.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (110.1ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522053640')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090515103555')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090520084951')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521101226')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522045349')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090522052904')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (18.3ms)[0m   [0;1mDROP DATABASE IF EXISTS `company_test`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE DATABASE `company_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mCREATE TABLE `levels` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (129.8ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) NOT NULL, `crypted_password` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `persistence_token` varchar(255) NOT NULL, `login_count` int(11) DEFAULT 0 NOT NULL, `last_request_at` datetime, `current_login_at` datetime, `last_login_at` datetime, `current_login_ip` varchar(255), `last_login_ip` varchar(255), `active` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime, `level_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `email` varchar(255), `perishable_token` varchar(255) DEFAULT '' NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (78.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (98.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (6.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522053640')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090515103555')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090520084951')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521101226')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522045349')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090522052904')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (10.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `company_test`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCREATE DATABASE `company_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (54.2ms)[0m   [0mCREATE TABLE `levels` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (106.2ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) NOT NULL, `crypted_password` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `persistence_token` varchar(255) NOT NULL, `login_count` int(11) DEFAULT 0 NOT NULL, `last_request_at` datetime, `current_login_at` datetime, `last_login_at` datetime, `current_login_ip` varchar(255), `last_login_ip` varchar(255), `active` tinyint(1) DEFAULT 0 NOT NULL, `created_at` datetime, `updated_at` datetime, `level_id` int(11), `first_name` varchar(255), `last_name` varchar(255), `email` varchar(255), `perishable_token` varchar(255) DEFAULT '' NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (76.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (106.1ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522053640')[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090515103555')[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090520084951')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090521101226')[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090522045349')[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090522052904')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-06-27 00:31:02) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (4.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 74ms (View: 28, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-27 00:31:02) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-27 00:31:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (7.0ms)
+Completed in 200ms (View: 148, DB: 5) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-27 00:31:10) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-27 00:31:45) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "first_name"=>"rajib", "password"=>"[FILTERED]", "login"=>"rajib", "last_name"=>"chowdhury", "email"=>"chowdhury284@gmail.com"}, "commit"=>"Register", "action"=>"create", "authenticity_token"=>"VXeSnAqcgIZUcG4lWRja7RfuOLQ47x0+mo/uP2bcbwU=", "controller"=>"users"}
+  [4;36;1mUser Columns (21.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Exists (0.7ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'chowdhury284@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'rajib') LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'fe6090a51d0189a78b6c9edbf24cf535fee9e87501a7b6076ec05290d61b577d45ee322fb86f0cb550333655a7fd7fe3dafda5699686979619b45c3b182bd624') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 19:01:46', '$2a$10$NH95B2Kjf/9O1pYYK.AuTerNOqOpjQJZ1hWtf3kakyS65rJA2TRNK', NULL, 'e-FEbENaAgBfyIS0Va4R', 'ko8qvI8nqYqP97n80hIb', NULL, 'fe6090a51d0189a78b6c9edbf24cf535fee9e87501a7b6076ec05290d61b577d45ee322fb86f0cb550333655a7fd7fe3dafda5699686979619b45c3b182bd624', 0, 'rajib', 'rajib', 'chowdhury', NULL, 0, '2009-06-26 19:01:46', 'chowdhury284@gmail.com')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.9ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'CtsO1vB2LDoZNXE5hdeI', `updated_at` = '2009-06-26 19:01:46' WHERE `id` = 1[0m
+  [4;35;1mSQL (11.2ms)[0m   [0mCOMMIT[0m
+Sent mail to chowdhury284@gmail.com
+
+Date: Sat, 27 Jun 2009 00:31:46 +0530
+From: Solaro <support@solaro.com>
+Reply-To: support@solaro.com
+To: chowdhury284@gmail.com
+Subject: Fill Out Your Detail And Activate Your Account
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  Thank you for creating an account! Click the url below to activate your account!
+</p>
+<a href="http://company.local/activations/new?activation_code=CtsO1vB2LDoZNXE5hdeI">Activate Your Account</a>
+<p>
+  If the above URL does not work try copying and pasting it into your browser. If you continue to have problem, please feel free to contact us.
+</p>
+Redirected to http://localhost:3000/account
+Completed in 986ms (DB: 39) | 302 Found [http://localhost/account]
+  [4;36;1mSQL (22.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-27 00:31:46) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (12.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 73ms (DB: 35) | 302 Found [http://localhost/account]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-06-27 00:31:46) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (4.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 56ms (View: 13, DB: 5) | 200 OK [http://localhost/user_session/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-27 00:31:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2009-06-27 00:31:57) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"password"=>"[FILTERED]", "login"=>"rajib", "remember_me"=>"0"}, "action"=>"create", "authenticity_token"=>"VXeSnAqcgIZUcG4lWRja7RfuOLQ47x0+mo/uP2bcbwU=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'rajib') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 438ms (View: 11, DB: 5) | 200 OK [http://localhost/user_session]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-27 00:31:58) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-27 00:33:52) [GET]
+  Parameters: {"activation_code"=>"CtsO1vB2LDoZNXE5hdeI"}
+
+ActionController::RoutingError (No route matches "/user_session/activations/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActivationsController#new (for 127.0.0.1 at 2009-06-27 00:34:10) [GET]
+  Parameters: {"action"=>"new", "activation_code"=>"CtsO1vB2LDoZNXE5hdeI", "controller"=>"activations"}
+  [4;36;1mUser Columns (5.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (13.6ms)[0m   [0mSELECT * FROM `users` WHERE (perishable_token = 'CtsO1vB2LDoZNXE5hdeI' and updated_at > '2009-06-19 19:04:10') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering activations/new
+Completed in 251ms (View: 11, DB: 20) | 200 OK [http://localhost/activations/new?activation_code=CtsO1vB2LDoZNXE5hdeI]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-27 00:34:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActivationsController#create (for 127.0.0.1 at 2009-06-27 00:34:19) [POST]
+  Parameters: {"commit"=>"Activate", "action"=>"create", "activation_code"=>"CtsO1vB2LDoZNXE5hdeI", "authenticity_token"=>"VXeSnAqcgIZUcG4lWRja7RfuOLQ47x0+mo/uP2bcbwU=", "controller"=>"activations"}
+  [4;36;1mUser Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM `users` WHERE (perishable_token = 'CtsO1vB2LDoZNXE5hdeI' and updated_at > '2009-06-19 19:04:19') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.7ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'QIqEtW78ghsQ7QlGUQNT', `active` = 1, `updated_at` = '2009-06-26 19:04:19' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'z3DQflDL-ZdeRdtKp5of', `updated_at` = '2009-06-26 19:04:19' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Sent mail to chowdhury284@gmail.com
+
+Date: Sat, 27 Jun 2009 00:34:19 +0530
+From: Solaro <support@solaro.com>
+Reply-To: support@solaro.com
+To: chowdhury284@gmail.com
+Subject: Your Detail Stored And Activation Completed
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<p>
+  Your account has been created and activated in SOLARO.
+</p>
+Redirected to http://localhost:3000/login
+Completed in 287ms (DB: 9) | 302 Found [http://localhost/activations?activation_code=CtsO1vB2LDoZNXE5hdeI]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-06-27 00:34:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 48ms (View: 13, DB: 4) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-27 00:34:19) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2009-06-27 00:34:27) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"password"=>"[FILTERED]", "login"=>"rajib", "remember_me"=>"0"}, "action"=>"create", "authenticity_token"=>"VXeSnAqcgIZUcG4lWRja7RfuOLQ47x0+mo/uP2bcbwU=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'rajib') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.7ms)[0m   [0;1mUPDATE `users` SET `login_count` = 1, `perishable_token` = '00hNOuOjDpc0T56Cv_1J', `current_login_ip` = '127.0.0.1', `updated_at` = '2009-06-26 19:04:27', `last_request_at` = '2009-06-26 19:04:27', `current_login_at` = '2009-06-26 19:04:27' WHERE `id` = 1[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 345ms (DB: 11) | 302 Found [http://localhost/user_session]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-27 00:34:27) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (3.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.7ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'yf32DZNkgiBWXnVMKPBX', `updated_at` = '2009-06-26 19:04:27', `last_request_at` = '2009-06-26 19:04:27' WHERE `id` = 1[0m
+  [4;36;1mSQL (6.8ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 69ms (View: 13, DB: 15) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-27 00:34:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2009-06-27 00:34:29) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;35;1mUser Columns (5.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (3.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = '2govwjMm9sSM9Tcb9VAx', `updated_at` = '2009-06-26 19:04:29', `last_request_at` = '2009-06-26 19:04:29' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (2.4ms)
+Completed in 76ms (View: 15, DB: 10) | 200 OK [http://localhost/account/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-27 00:34:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2009-06-27 00:34:32) [PUT]
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "first_name"=>"rajib", "password"=>"[FILTERED]", "login"=>"rajib", "last_name"=>"chowdhury", "email"=>"chowdhury284@gmail.com"}, "commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"VXeSnAqcgIZUcG4lWRja7RfuOLQ47x0+mo/uP2bcbwU=", "controller"=>"users"}
+  [4;36;1mUser Columns (11.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.7ms)[0m   [0mUPDATE `users` SET `perishable_token` = '-g0xhRDc5QT2TSXiJ2WJ', `updated_at` = '2009-06-26 19:04:32', `last_request_at` = '2009-06-26 19:04:32' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.7ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'Wt6i79D1D1bAY0eFtIp5', `updated_at` = '2009-06-26 19:04:32' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 68ms (DB: 18) | 302 Found [http://localhost/account]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-27 00:34:32) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.6ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'QBbSUhqc__xqttZOQHOe', `updated_at` = '2009-06-26 19:04:32', `last_request_at` = '2009-06-26 19:04:32' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 51ms (View: 4, DB: 7) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-27 00:34:32) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2009-06-27 00:34:34) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;35;1mUser Columns (4.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.7ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'oZMCUTrh_QPUn78kksD1', `updated_at` = '2009-06-26 19:04:34', `last_request_at` = '2009-06-26 19:04:34' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (187.6ms)
+Completed in 258ms (View: 205, DB: 7) | 200 OK [http://localhost/account/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-27 00:34:35) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

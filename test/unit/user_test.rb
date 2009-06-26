@@ -1,12 +1,8 @@
 require 'test_helper'
 
-Factory.define :user do |u|
-  u.login 'foobar'
-  u.password pw = 'foo123!@#'
-  u.password_confirmation pw
-end
-
 class UserTest < ActiveSupport::TestCase
+  
+  should_validate_presence_of :first_name, :last_name
 
   setup do
     User.delete_all

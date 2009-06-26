@@ -9,7 +9,7 @@ require File.join(File.dirname(__FILE__), 'boot')
 Rails::Initializer.run do |config|
   config.gem 'RedCloth', :lib => 'redcloth'
   config.gem 'haml'
-  config.gem "authlogic"
+  config.gem 'authlogic'
   config.gem 'thoughtbot-factory_girl', :lib => 'factory_girl', :source => 'http://gems.github.com'
   config.gem 'thoughtbot-shoulda', :lib => 'shoulda', :source => 'http://gems.github.com'
   config.gem 'configatron'

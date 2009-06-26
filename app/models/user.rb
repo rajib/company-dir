@@ -1,11 +1,9 @@
 class User < ActiveRecord::Base
   serialize :parameters
   
-  has_one :level
-  
   acts_as_authentic { |c| c.crypto_provider = Authlogic::CryptoProviders::BCrypt }
 
-  validates_uniqueness_of :first_name, :last_name
+  validates_presence_of :first_name, :last_name
   
   preserve_attributes_if_nil :password
 

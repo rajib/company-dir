@@ -1,0 +1,596 @@
+# Logfile created on Sat Jun 27 00:12:39 +0530 2009  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (5.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.4ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (6.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mUser Exists (1.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar') LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'be88d64dc6b13842343ec9bdf54e916ab0fd4c3e5d659ff19959c583bbdf74aac87a8153c616c889c899e74aa95159ad2f5bdc0fb142ff965b93d12fbaef63b9') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar') LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '93709252234e73a6110f450e7a01a817e4e270960cd249ce6890bd6ddba64506970fb6b1c0d19edd12f09a35aceb609536013145faeb0849e15fb94e82fe8bcb') LIMIT 1[0m
+  [4;35;1mUser Exists (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mUser Exists (0.7ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'odd ^&(@)\'\"!') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'e7ba607468a0f3d4a00fba7611ed461484f95a13622038ea7167669eac84cb57cfd3a139a4c28c124140576ae0401488cb75d5429facd0d1d47aca56c6f66be3') LIMIT 1[0m
+  [4;35;1mUser Exists (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (2.5ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'c685b85125ab740e55c765ea8eb7be64e3c8f04832123e559dbc2ac99d3f3ebd6fab2ae37fc2da228f4c9faaedc5817da7d862c2a30ad0a6f42348ec53e19a16') LIMIT 1[0m
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;35;1mUser Exists (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'c2769da53215031a776c6fa78fe140063986738ebfa87ff95f7fbf86da3d0aa7cf85c94844ac8db99e090ece68db8278af9f532ef752f43be6ffb23ba11bd961') LIMIT 1[0m
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;35;1mUser Exists (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '003b2d3600c1d9b57cae3171ce5461e041e7ff09e47c4a0788a10dacf5908b9fe762ccc8c9ad27ac9faa783d357f681b6c475264bc855210eafba2d1e7d0a18f') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '41986a47c52a829b1fa6c8a16e7fa7928eb3eba82cf83a1eefc44d160a9aac1ded41011b0b62148c5d8665463b26addee8781bfee8db4552840975da6f8e464d') LIMIT 1[0m
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;35;1mUser Exists (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user1@example.com') LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar1') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '839040978d911ad5203e481032447b326a74d202ca5c452d5dd3170e54415aea2d483fcbc6d2560caad119a86d0b511bc669717252c36f0e5a1be1a8c6ca8fb0') LIMIT 1[0m
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;35;1mUser Exists (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user2@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar2') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'f692aba104e833014e8fe27b8234a9cfcdbb3119829c238869f1d1f1b7e7fb65c26de539d024ed2b5d36a8221867f2cbca1601bf140942c508c2c05424ec5884') LIMIT 1[0m
+  [4;35;1mUser Exists (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;35;1mUser Create (0.7ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:50:22', '$2a$10$31pIGpEL2ZVR1n1NU9yThOQmYvO3UsQDL2CpPxoKFx0rfM9f4YUYy', NULL, 'YMHLsuPRt7Q7vR4n10mk', 'yjhdMsNZMRHZI3r9MjGo', NULL, 'f692aba104e833014e8fe27b8234a9cfcdbb3119829c238869f1d1f1b7e7fb65c26de539d024ed2b5d36a8221867f2cbca1601bf140942c508c2c05424ec5884', 0, NULL, 'foobar2', NULL, NULL, 0, '2009-06-26 18:50:22', 'user2@example.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user3@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'odd ^&(@)\'\"!') LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '7af05cb8f2f07cb0c4b555c99b86cb0146461532fe9d593d6fd4404486bdd6ee0e8c0b015f7da0ca61c115f9d8053be5cb467d054a60f918a9f006c465cd9009') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user4@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar3') LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '451d873893b9ef242cf04675731f02e3c0858cb75a304ee9d40ee6faa294d90f98989b3052ec3d24fc3f46614b6bdf0f4aee5be51ac8bf4359ac9d12674cfede') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user5@example.com') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar4') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '66dd69cf13a3f5c9f29cbcb1721d0fcb87131a4fd4a625138d0c5a4233b1a67bbb9ce8f8e9fec029678e2049ddaeb9a111049c5394f8867aa5f1c0016539bd6e') LIMIT 1[0m
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;35;1mUser Exists (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;36;1mUser Create (1.8ms)[0m   [0;1mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:50:22', '$2a$10$5v4uWET5O0okRJ2R8QMWJe5T8lis6nbY69e/9sO4pxDANqCbMfI42', NULL, 'xY52FX8SOWhSX9yN02fr', '78KUTWd8A5uNDEXP09aU', NULL, '66dd69cf13a3f5c9f29cbcb1721d0fcb87131a4fd4a625138d0c5a4233b1a67bbb9ce8f8e9fec029678e2049ddaeb9a111049c5394f8867aa5f1c0016539bd6e', 0, NULL, 'foobar4', NULL, NULL, 0, '2009-06-26 18:50:22', 'user5@example.com')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.7ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'xxx') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '35dfdcc4297ab8e8052ae25173e75600c0211bb918a900f346944bf1003c61cb44c6e6359afd843af50e6b25594ef2eb232ba36648d14da65cd0e3ca14f0fa9a') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user6@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar5') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '1d8dc735e9ed97d65f9a6c5ce5e8297b0c9553fff8f21d7460154d8403116329f40c77c07d4c14e10744b6aeddc69b3df567ac401054adce6aca4c45c70c4708') LIMIT 1[0m
+  [4;35;1mUser Exists (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:50:23', '$2a$10$NdzJeqacOwUggn2BwmORwelxA9a07ExlMiZInQRtMTCgtV6bzBKXG', NULL, 'WGizolKgrkHGaDdmur4z', 'hjgkbhBiam5CxZkP9Gap', NULL, '1d8dc735e9ed97d65f9a6c5ce5e8297b0c9553fff8f21d7460154d8403116329f40c77c07d4c14e10744b6aeddc69b3df567ac401054adce6aca4c45c70c4708', 0, NULL, 'foobar5', NULL, NULL, 0, '2009-06-26 18:50:23', 'user6@example.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '30986f9c5827385093744e54b87fd7549a2f85bcedbd8ab159212c6e385553c2ae2d508818b92536ec1c44bb9bf173117372ca6a4d55a34d6e7ca49720582b0b') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;35;1mUser Exists (0.8ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (2.9ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user7@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar6') LIMIT 1[0m
+  [4;36;1mUser Exists (0.7ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '9b7b98ba34d597e6033ff313588934e7d9933cebe2cb330ad944fd88d18273272987bc6b09ec38d44ab4a38df4fb9fc30d392fd37a7b08ecc34419a6b470cd09') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:50:23', '$2a$10$OBsACu20Ufj6DY3RU44sbOJNrYIMf6.nnA0uURT2eEV0P9uXE/xGm', NULL, 'lK79XYEJeOMswTObJBYk', 'q2Mg0bYMs_lmsFf5UMny', NULL, '9b7b98ba34d597e6033ff313588934e7d9933cebe2cb330ad944fd88d18273272987bc6b09ec38d44ab4a38df4fb9fc30d392fd37a7b08ecc34419a6b470cd09', 0, NULL, 'foobar6', NULL, NULL, 0, '2009-06-26 18:50:23', 'user7@example.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar6') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'fa2482eec5a453c7b9e7b7a7653b0db400224844bb66f9d3ef9e135c3e577072f6c39423722f03d556fc95c659788c25debb7c54737ab96f00b93defd38e13c0') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`first_name` IS NULL) LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`last_name` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (4.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user1@example.com') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar1') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '6b034cb7c76fe090b8244cd01b1aab5c83962fff2234f7c889a98f54f786c096764359e5f66d8625b7663b051386b9a06030a38e0c3ce4802365eb33e2a7d62b') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.4ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user2@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar2') LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'c99b8334a65995760e9d23254a71ad80c45551a01d940a857fb56af0eea6861a82ffb96c88092dd5cd9dbeea489b9eb64b8063ee4a300ebd835e74da739f742d') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user3@example.com') LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'odd ^&(@)\'\"!') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '5b6f7b25a686522029a987e4a8b0220c4550462c0d4d8ebb8fdda06cc562baeb28366f2efa35e36443cd1972e9c94066f48dfdd8248644a598a8314e5d1fd573') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mUser Exists (0.7ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '03da160e51596e642b4d7ef85ca8557819ff6373c0032ffde6317a0f9f512aae3a8c453713f46239447fb307f0632fd982da4ca35434612df450544957e9a15d') LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'a144cfad1812b9d58f8cfedad29b9c49c8ed55612d51aefa0f898a63a4a298ffd9f35eda61eef9f689bff15d7afbca410d766ab6f468d4d068c36d1fdcbd746e') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mUser Exists (1.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user4@example.com') LIMIT 1[0m
+  [4;36;1mUser Exists (1.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar3') LIMIT 1[0m
+  [4;35;1mUser Exists (1.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'a997f2062263aee8d56aa77d64ee64167c96079c5462cf5e5e74b8c90cb23458e4c7d39bd4ebddb255c384addfb80cdb8cec61ff72313404c9d805eef31f3758') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (1.1ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (3.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user5@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar4') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '22f2fd2362e9425b51e9ba3964caa06ee4917f4a55df1206d0ba46bf79544b0828f626e83a616fbeae899f5caf3e1b594eb0eaa38f8f28cc5cd17967e43611b2') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user6@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar5') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '5624befae5096e4db69686d9a86aa6bb1e066b813a1ec1402dfd221c624fa82addb28e62fefed8211dcf25e3a943fd2bf58f59d8f8e12066ef7a991f73784ed6') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user7@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (1.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar6') LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '208106cc9b0c21ab9e0788caef4944896b7227437f86f98742b3e59d7237f8c57173c044b42911636e606569810704bb4432a6ff07738bcf3c9d67a432231ba7') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mUser Exists (1.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user1@example.com') LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar1') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'df72c8f54bb2c7a5fdfe849106e2c2484657e0258a0c4c21c6ede9ac5fe1596e180756d475cf9027b5c3282e1a74edfd90c1b5385ac2a39eed1a769f5f21fbfe') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user2@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar2') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '3ced264655eeb6b24f4851591b5ace1a23e66acf0f2729e544a0294b9423fa2aeade962ef85512871a3dac308764f495095bc244291804411f5d5c2cad8ddeb9') LIMIT 1[0m
+  [4;35;1mUser Create (1.0ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:53:52', '$2a$10$wBQdr8Rl49eI7L4OILt8W.mDT/9bZq1O4ukPzMNmgpmsK5yH.8MaO', NULL, 'Be0NcytxF23myO2EOSmo', 'ZzKseddqmP6jr-pqhPvy', NULL, '3ced264655eeb6b24f4851591b5ace1a23e66acf0f2729e544a0294b9423fa2aeade962ef85512871a3dac308764f495095bc244291804411f5d5c2cad8ddeb9', 0, 'Rajib', 'foobar2', 'Chowdhury', NULL, 0, '2009-06-26 18:53:52', 'user2@example.com')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user3@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'odd ^&(@)\'\"!') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '7a0a798639e65d129f80ed98f204c448083b574a5dd237776835c484b38e64a30514a04e3fc9f568e26e3d682cff60312b1851862d269f96851d1c8f7b2501dd') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '831c3cf658b531afecffa731407acef2bda2cd0a6ea28442deb74d9891712a42a865bc862a5c45b95943c3b0b100ea3a9ba02ad785e380c45de20755c20a55e0') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'b3b813a9ad57374ae2f2890f53e98d35630c09e6b5c4aafe095b91748191be68c3d6e5048d2faa5e33c81eba078786791d747fb109c09bd79686e84c2e15a207') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user4@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar3') LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '56aa007286ee71d3ccd9e66ae721709a520bd2bced6e6277fceca599b06498f76ce24c5c72bd3d59cfc12fb921310425d4aa9bf7fa11ec32aa1e30fdb782e48f') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user5@example.com') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar4') LIMIT 1[0m
+  [4;35;1mUser Exists (0.7ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '58e4cf78ffe22490075de6b83e7071165068e9860579b9295705bd0bbe77c038a33749ce701ea6e2b554cb40e90a012da405371404fd264bb9fbea6497769e22') LIMIT 1[0m
+  [4;36;1mUser Create (1.8ms)[0m   [0;1mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:53:52', '$2a$10$yvN2GNI9AYKCsrwMy8hfkuR5Q/F7OK4PWkTITcubKIjAk8paNeevu', NULL, 'sjId7n28PWsM9S2zK75O', '9YVc84YHw4cTRHEM7kjj', NULL, '58e4cf78ffe22490075de6b83e7071165068e9860579b9295705bd0bbe77c038a33749ce701ea6e2b554cb40e90a012da405371404fd264bb9fbea6497769e22', 0, 'Rajib', 'foobar4', 'Chowdhury', NULL, 0, '2009-06-26 18:53:52', 'user5@example.com')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'xxx') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'b1fd2c538a4f84e2fd56726d28c0785d7994d82c70a517236799db45c41b0e42d000ec30f45405ccf7ad48fc546402c04d2e106e8ee3f17e5b17fe610272bee6') LIMIT 1[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user6@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar5') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '25a7de3062e227a656ea8538a7f095b097ea1b4f344717d9c2390c7c887c887f82378b4c1ed40bce662cf9db3852fc44532db740163139955c186cc81490d5fd') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:53:52', '$2a$10$qMF/TzhxwSW7tKPugMBrCejohcH/oeBd1SNPh.owLXpIxs4xA4zHy', NULL, 'lC15vigESoaRmo6x195U', 'T-kCU7DksPbHEsJprKqK', NULL, '25a7de3062e227a656ea8538a7f095b097ea1b4f344717d9c2390c7c887c887f82378b4c1ed40bce662cf9db3852fc44532db740163139955c186cc81490d5fd', 0, 'Rajib', 'foobar5', 'Chowdhury', NULL, 0, '2009-06-26 18:53:52', 'user6@example.com')[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Exists (1.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '49470055cb491bd042262b32d9c7bf4b3029b0cc93335d3cfe8715461c33568b5eec51fad94aa34f61f887fdc2a92c0f0af71d81a84be22d6a2c5b1421104344') LIMIT 1[0m
+  [4;36;1mSQL (6.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user7@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar6') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '3cac83b2dc859aa4d0f09f70fc239d2ec7bf01c00abbc725257a4851abce80c6d1d0eebc2e6e5117c567eff987210589af1df2bd8c2e612fe069717b50cd3ac1') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:53:53', '$2a$10$S6egRneRbd7hWNCA1xUOJOXUO5MOpJTGAQrp5C7E.IFwLXaZLDqsm', NULL, 'gOeqSxLVjJoiPSrldNYm', 'lHemdOd4oAvjyoOIU7Zu', NULL, '3cac83b2dc859aa4d0f09f70fc239d2ec7bf01c00abbc725257a4851abce80c6d1d0eebc2e6e5117c567eff987210589af1df2bd8c2e612fe069717b50cd3ac1', 0, 'Rajib', 'foobar6', 'Chowdhury', NULL, 0, '2009-06-26 18:53:53', 'user7@example.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mUser Exists (0.7ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar6') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'd009351252dbb4ee60b9af49e347be185f4ac609d1aa3a6eaa26c2aa8ac442708573fd39877386111468963770d3092d0746ac9a9b6317e8c535cb711f518b94') LIMIT 1[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (10.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mUser Exists (0.7ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user1@example.com') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar1') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '755d2d2665f72a745a80f6ca7f14f652e7fda2043fd3eaa12ce11a1a5f6725db931dae7c95985b47d43952d33b8164dcd045e02fd00cafba9b7f8bfb268fd345') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user2@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar2') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '48f37d9795a74f36dff1d3c583cfeb1ff27a61e9fe61799872587c52a06e1829cb44f3aee1d24ae9574c82deac102e9524adbe17daa538b6bd4749df5be439cd') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:55:00', '$2a$10$o1FFDigiiXrmvUhVMjmaSOrXLU1LUN05n4hoqU8fP7vu2Rv0qQ/N6', NULL, 'B8xXJZjtv_MH8U5yMAdz', '6ITolywK716YIgXGzIcV', NULL, '48f37d9795a74f36dff1d3c583cfeb1ff27a61e9fe61799872587c52a06e1829cb44f3aee1d24ae9574c82deac102e9524adbe17daa538b6bd4749df5be439cd', 0, 'Rajib', 'foobar2', 'Chowdhury', NULL, 0, '2009-06-26 18:55:00', 'user2@example.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user3@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'odd ^&(@)\'\"!') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'd187e765a81e305f5643e1d0d50a0b11667f65a97422b81c59e303a91e8fc90570f3c814eed2c2640af6c04889a013a2e6d7bb741f51d16b2d94be8323e7974e') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Exists (0.8ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'ebfd99262878e7434fa39099beb1fba38e2f3dac302fe67391a56ee6f21d7842a2aa40d12ef04a7f003ed3be2c1845791dad0ac5b491955b142e32a6888f0a2a') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.4ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '7d325c979f8840ab129ea8a47c52d09af63411bba6b4224e5f52115b995ed6dbd2acbf625937824a05e8988e07263a5790c46dde926d9c35c2853a5d3d2384d1') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mUser Exists (0.9ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user4@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar3') LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '9c83cd7f68f6eb6ec95bd52c192edc469c3f4e973fdc296aff9b0923e81dab22e8fbb275d53715f2e886459a21c2f0968a40b9b09a9a6c46118883e99b326fd3') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Delete all (0.3ms)[0m   [0mDELETE FROM `users` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user5@example.com') LIMIT 1[0m
+  [4;36;1mUser Exists (0.8ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar4') LIMIT 1[0m
+  [4;35;1mUser Exists (0.7ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '12aa6b14d824724a13ec3a41d66c0666de96a096135bec992ba7f9927bf3635b1563c37dd4287cefc3736d1aa569f269b3f9927c901e43ba792fe0e687324148') LIMIT 1[0m
+  [4;36;1mUser Create (1.9ms)[0m   [0;1mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:55:00', '$2a$10$z9HcQ/CYoD9oChceztfwVeNKTq7QWQIsFX91hZhEBE5OtDb/yZSSG', NULL, 'dQA2ENSfdkp0ez2y7c6g', 'I7zdgW-6ueF2Wh46ej7O', NULL, '12aa6b14d824724a13ec3a41d66c0666de96a096135bec992ba7f9927bf3635b1563c37dd4287cefc3736d1aa569f269b3f9927c901e43ba792fe0e687324148', 0, 'Rajib', 'foobar4', 'Chowdhury', NULL, 0, '2009-06-26 18:55:00', 'user5@example.com')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.7ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'xxx') LIMIT 1[0m
+  [4;35;1mUser Exists (1.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '6bb54b2bfae064ae4c9ae84d2df78fb8eeaed6dbbdcc292426b4ffd4c8ea8ca7144505e570aea988f3018ff84ed62fb4f520713ce0c83ca2372fe0d0935cb8b6') LIMIT 1[0m
+  [4;36;1mSQL (9.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.7ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user6@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar5') LIMIT 1[0m
+  [4;36;1mUser Exists (0.8ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'a59c5b64200165b7742f012cfef7bc7e57d8d158e6b4e5c53fe52ddbbdfda2aa6d5fbfd86504ec8b4055e47ed7696521e975432c972cc687c610415f90036a75') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:55:01', '$2a$10$V5y7MMcNv6gNSb.ztDAyXe2xiHu5zdPiPUkXP46MiSTVwX8Uf/2Tu', NULL, 'vMVYBDpepB2DQv3hgQsF', 'b5pzfWEjpzG41J37hZ4k', NULL, 'a59c5b64200165b7742f012cfef7bc7e57d8d158e6b4e5c53fe52ddbbdfda2aa6d5fbfd86504ec8b4055e47ed7696521e975432c972cc687c610415f90036a75', 0, 'Rajib', 'foobar5', 'Chowdhury', NULL, 0, '2009-06-26 18:55:01', 'user6@example.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Exists (0.7ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '5b0d8b4781e8e74454cd38895f7d0d7b31328b97843e02c578a992305578edcf160ff9a9028587e8aeb10d05d9f6678da0c991e850372733634e8132855eddc3') LIMIT 1[0m
+  [4;36;1mSQL (168.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Delete all (0.3ms)[0m   [0;1mDELETE FROM `users` [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Exists (0.9ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user7@example.com') LIMIT 1[0m
+  [4;35;1mUser Exists (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar6') LIMIT 1[0m
+  [4;36;1mUser Exists (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '10dca5d1a230ce987ef1ed8f3126b80f269a396486106f67248f27ff69c1e6059b894e47bfe9347097472c13de853391a5a7a39bafe5b79e5e250c4514e9e20f') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:55:01', '$2a$10$T2kfCboooEWcp2ZPu1/yTeOBG2hF/a20OYq33qZafV.Gy0vbFCI0C', NULL, 'sDAin-D4AF4vrn-JR07N', 'TedyJsjdB3BOs7iyutVD', NULL, '10dca5d1a230ce987ef1ed8f3126b80f269a396486106f67248f27ff69c1e6059b894e47bfe9347097472c13de853391a5a7a39bafe5b79e5e250c4514e9e20f', 0, 'Rajib', 'foobar6', 'Chowdhury', NULL, 0, '2009-06-26 18:55:01', 'user7@example.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mUser Exists (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'foobar6') LIMIT 1[0m
+  [4;35;1mUser Exists (0.7ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'd9ca7315da40018d17ad5b713e5c12e73649fb9adef790e6d39cf0e8ac3bf4071d466a940cb84992b39bbcbf8bd04fc66359038173b894ab91623f85082d6c87') LIMIT 1[0m
+  [4;36;1mSQL (6.5ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (34.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:57:42', '$2a$10$WmGyeIHk/jrHX4QXV6yfJuZxKvoUus6gPQz34Hi0tOXzg8nM4/.1W', NULL, 'UMIvzsfMY3k4hj8UdN5R', 'HKNzzit6obdwfo1o_AJb', NULL, 'be67e0aedd23ab2107371134cfcbd3eafd262c6cfc0843456eb0069bcbfe0944cf625abf04cd2b0a1651f878c4200de1ef34f9a98ec80990164d83118bcf3664', 0, 'Rajib', 'foobar1', 'Chowdhury', NULL, 0, '2009-06-26 18:57:42', 'user1@example.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-06-27 00:27:42) [POST]
+  Parameters: {"action"=>"create", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 133ms (View: 128, DB: 41) | 200 OK [http://test.host/user_session]
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:57:42', '$2a$10$rTxF8hloKFmGmWRSQUFJ9eD.XrKOXx1u1dDqZX2iD2EnGrxZgKj1S', NULL, 'FsZGF6GLRjOWwPjOn_xV', 'BsUgXj6uyU9YR5F8YLV3', NULL, '7fee1a3e81eab6601777ef20ed4fa093d63191d6c4af18a4066e54ed445b8f73e78c9270a5a9659c9fe5aab74f4d184455d6958462cb18a6a148a9fb5efab0ad', 0, 'Rajib', 'foobar2', 'Chowdhury', NULL, 0, '2009-06-26 18:57:42', 'user2@example.com')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UserSessionsController#destroy (for 0.0.0.0 at 2009-06-27 00:27:42) [POST]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+Redirected to http://test.host/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 2ms (DB: 3) | 302 Found [http://test.host/logout]
+  [4;36;1mSQL (1.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.7ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:57:42', '$2a$10$ARU3VRhmzKpQ4gE.8foid.WHEPi//Tt8ydnDGL.e7f/JPpNRpm3WS', NULL, 'ULtyOkizZApWQFDiZ1RS', 'XpFjU2wRXR6YZwpbhTkK', NULL, 'c1d91411875cb6a5d3b99e878975b6f47d0efa13e3258cd52e2a875c0403944901c46d26b354e97350d5caf939dd744f8c8066116a71383d3d799614a22fec87', 0, 'Rajib', 'foobar3', 'Chowdhury', NULL, 0, '2009-06-26 18:57:42', 'user3@example.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UserSessionsController#destroy (for 0.0.0.0 at 2009-06-27 00:27:42) [POST]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+Redirected to http://test.host/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 2ms (DB: 3) | 302 Found [http://test.host/logout]
+  [4;35;1mSQL (1.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:57:43', '$2a$10$IYiu5t98iMUSmqsdmie.ze9lWr2SNc8ka2Dj/1rWjYmZFg7ZQJHaW', NULL, '7SNJTdDwvd3RoYxsclxo', '3BwKPywdsd6YZ7gjqNSt', NULL, 'db27870b2bd16d3fe885b4cc0048b7347c12f67335d680e99a7e6f1cdf329d656926fdac4ea4f422eb28489ba95ab75a1c10e8231a8c551bf522d7459c916e3f', 0, 'Rajib', 'foobar4', 'Chowdhury', NULL, 0, '2009-06-26 18:57:43', 'user4@example.com')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UserSessionsController#destroy (for 0.0.0.0 at 2009-06-27 00:27:43) [POST]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+Redirected to http://test.host/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 2ms (DB: 3) | 302 Found [http://test.host/logout]
+  [4;36;1mSQL (2.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#destroy (for 0.0.0.0 at 2009-06-27 00:27:43) [POST]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+Redirected to http://test.host/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 2ms (DB: 2) | 302 Found [http://test.host/logout]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+
+
+Processing UserSessionsController#destroy (for 0.0.0.0 at 2009-06-27 00:27:43) [POST]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+Redirected to http://test.host/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 7ms (DB: 0) | 302 Found [http://test.host/logout]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:57:43', '$2a$10$DcWO9IkPpVt58UALuD5g/Oq1EKFty1vjMV46kehiaCl.3fWtzqxpS', NULL, '6Ni-FiVHuMkF44cUSezr', '5O9-exTkeDqcXAnWxTZj', NULL, '12b860b30648e29fc47a9f3266a9a458696d6e4d3531821230f5e819f9afe838489ac8d08b60a5e33a77138e3a69dacfee8374ec5f27f8030bae45ba5957efe6', 0, 'Rajib', 'foobar5', 'Chowdhury', NULL, 0, '2009-06-26 18:57:43', 'user5@example.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2009-06-27 00:27:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://test.host/]
+  [4;35;1mSQL (1.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2009-06-27 00:27:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 7ms (View: 5, DB: 2) | 200 OK [http://test.host/]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:57:43', '$2a$10$CshvxWDb3rSz0wQ1a6BqZe7aUA15cyZW7dNO1hfSwawDIJZcd/6zi', NULL, '6O5PZIuMWPWdv4zk8Apf', 'PYM9Wht7SIp8VBtmc1kS', NULL, '3abcb800b905769e7138487900f467ec615bee93cf384bc96ce15b556c48776d3812c5c14ddefbe3887e8562974769d87f15bf088fbaae1522729c3828913a2b', 0, 'Rajib', 'foobar6', 'Chowdhury', NULL, 0, '2009-06-26 18:57:43', 'user6@example.com')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-06-27 00:27:43) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+Redirected to http://test.host/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/account/edit]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-06-27 00:27:43) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+Redirected to http://test.host/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/account/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-06-27 00:27:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (7.9ms)
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://test.host/signup]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (1.5ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:57:43', '$2a$10$BIZ67yFVx.hJwws7tskvcewGNQax.ZUudwO3LdPoaNEBJEjh74wTe', NULL, 'm16rf0ww943WX99mh65h', '8TJTnD8x_8AI9k3fczgo', NULL, '5bf067323c103d725fd0862fa8b33f196c30e453988b0acded02b4f1d22f5b70016aca41d165b0cb05a74597e9936dd52a8fe65d534d62f87fb43d539babb7fc', 0, 'Rajib', 'foobar7', 'Chowdhury', NULL, 0, '2009-06-26 18:57:43', 'user7@example.com')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-06-27 00:27:43) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://test.host/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 2ms (DB: 5) | 302 Found [http://test.host/account]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-06-27 00:27:43) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://test.host/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/account]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:57:43', '$2a$10$.IKRwbNYXPDHBazEW//k9OQEKjKSxWtCSuirizMA/2awUbZEkN0N2', NULL, 'zqRzQW2K7y0XxS3wg-6J', 'zNaEfkX-9vbUdLaUy2mN', NULL, 'c6540e91f0bcfa2e917612c839f86bcc7f33ea42a2c4d1f3bb91ae579c4da110d60998e694e6bf52d23d2ce44d8cf6cc191b0473632808276b0c04fbf1ddef49', 0, 'Rajib', 'foobar8', 'Chowdhury', NULL, 0, '2009-06-26 18:57:43', 'user8@example.com')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-06-27 00:27:43) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]"}, "action"=>"update", "controller"=>"users"}
+Redirected to http://test.host/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/account?user%5Bpassword%5D=newpassword&user%5Bpassword_confirmation%5D=newpassword]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`last_login_at`, `level_id`, `last_request_at`, `updated_at`, `crypted_password`, `current_login_ip`, `perishable_token`, `password_salt`, `current_login_at`, `persistence_token`, `login_count`, `first_name`, `login`, `last_name`, `last_login_ip`, `active`, `created_at`, `email`) VALUES(NULL, NULL, NULL, '2009-06-26 18:57:43', '$2a$10$rX7BM/HPSPm2kTl1sBKUne3piPFoznpA1E8YTRf2kiG3uAm48NTYe', NULL, 'GACoGnMWPgjqI9ugQylv', '7Fh10i0M535AIrby-w1h', NULL, '91eb835b12215d8f69ebc49477d1e9f14b5ec439ed314921332f6eb890268459aef554cae5a73ccec1a96926166c7b930d98a2fd23ca4ac57a59d5ede8c3b168', 0, 'Rajib', 'foobar9', 'Chowdhury', NULL, 0, '2009-06-26 18:57:43', 'user9@example.com')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-06-27 00:27:43) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]"}, "action"=>"update", "controller"=>"users"}
+Redirected to http://test.host/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 2ms (DB: 2) | 302 Found [http://test.host/account?user%5Bpassword%5D=newpassword&user%5Bpassword_confirmation%5D=newpassword]
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-06-27 00:27:43) [POST]
+  Parameters: {"action"=>"update", "controller"=>"users"}
+Redirected to http://test.host/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/account]
+  [4;35;1mSQL (2.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (33.4ms)[0m   [0mSHOW TABLES[0m
