@@ -1,0 +1,11 @@
+# This file was auto-generated.  Feel free to customize it to your whim.
+
+development: &local
+    site_url: company.local
+
+production:
+    site_url: company.com
+
+test:
+    <<: *local
+

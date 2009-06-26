@@ -1,0 +1,6 @@
+%h1
+  Activate your account
+- form_for @user, :url => activations_path(:activation_code => params[:activation_code]), :html => { :method => :post } do |f|
+  %br
+  = f.submit "Activate"
+
