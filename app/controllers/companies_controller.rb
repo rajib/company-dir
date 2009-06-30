@@ -1,8 +1,10 @@
 class CompaniesController < ApplicationController
+  before_filter :require_user
+  
   # GET /companies
   # GET /companies.xml
   def index
-    @companies = Company.all
+    @companies = current_user.companies
 
     respond_to do |format|
       format.html # index.html.erb
@@ -40,7 +42,7 @@ class CompaniesController < ApplicationController
   # POST /companies
   # POST /companies.xml
   def create
-    @company = Company.new(params[:company])
+    @company = current_user.companies.build(params[:company])
 
     respond_to do |format|
       if @company.save

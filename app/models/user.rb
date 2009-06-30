@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
   validates_presence_of :first_name, :last_name
   
   preserve_attributes_if_nil :password
+  
+  has_many :companies
 
   def activate!
     self.active = true

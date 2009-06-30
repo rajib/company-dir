@@ -10,8 +10,8 @@ Rails::Initializer.run do |config|
   config.gem 'RedCloth', :lib => 'redcloth'
   config.gem 'haml'
   config.gem 'authlogic'
-  config.gem 'thoughtbot-factory_girl', :lib => 'factory_girl', :source => 'http://gems.github.com'
-  config.gem 'thoughtbot-shoulda', :lib => 'shoulda', :source => 'http://gems.github.com'
+  # config.gem 'thoughtbot-factory_girl', :lib => 'factory_girl', :source => 'http://gems.github.com'
+  # config.gem 'thoughtbot-shoulda', :lib => 'shoulda', :source => 'http://gems.github.com'
   config.gem 'configatron'
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers

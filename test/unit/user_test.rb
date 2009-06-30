@@ -3,6 +3,8 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
   
   should_validate_presence_of :first_name, :last_name
+  
+  should_have_many :companies
 
   setup do
     User.delete_all
